@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 Hi there my name is Pratik Lathiya and im currently developing
 angular web application on My Favourite songs.this is my readme
 file.
@@ -16,4 +16,6 @@ Command : ng new pra_Lathiya_MyFavouriteMusicApp
 commited all work in github
 
 19/01/2022 02:08 PM
+
+
 
