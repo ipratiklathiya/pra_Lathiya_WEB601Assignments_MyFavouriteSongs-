@@ -17,5 +17,5 @@ commited all work in github
 
 19/01/2022 02:08 PM
 
-
+Generating a component using npm run-script generatecomponent
 
