@@ -30,3 +30,27 @@ npm run-script generatedirective to generate a directive
 Added folder inside of my app named helper-files
 commit to all work to github and continued to work on my application
 
+03:00PM
+
+added new file into helper-files folder named content-interface.ts
+
+Inside of this new file, i define an interface called Content with the following
+parameters:
+
+id as a number title as a string
+
+description as a string
+
+creator as a string
+
+imgURL as an optional string
+
+type as an optional string
+
+tags as an optional array of strings
+
+commited all work in github and continued work on application
+
+3:15PM
+
+
