@@ -23,3 +23,5 @@ npm run-script generatepipe to generate a pipe
 
 02:53 PM
 
+npm run-script generatedirective to generate a directive
+
