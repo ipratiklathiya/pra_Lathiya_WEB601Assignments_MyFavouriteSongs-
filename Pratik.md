@@ -53,4 +53,21 @@ commited all work in github and continued work on application
 
 3:15PM
 
+Created another file inside of the helper-files folder called content-list.ts that
+
+contains a class named ContentList, with the following attributes and methods:
+
+A private array of type Content
+
+A constructor that initially sets the array to be empty
+
+A getter function that returns your Content array
+
+An add function that adds 1 Content item to the end of the array
+
+A function that returns the number of items in the array
+
+A function that takes an input of an index of the array and returns a reader-friendly html
+output of a Content item's properties at that index (title, description, creator, imgURL
+and type).
 
