@@ -25,3 +25,8 @@ npm run-script generatepipe to generate a pipe
 
 npm run-script generatedirective to generate a directive
 
+02:57 PM
+
+Added folder inside of my app named helper-files
+commit to all work to github and continued to work on my application
+
