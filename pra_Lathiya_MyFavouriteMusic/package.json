@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "generatecomponent": "command-to-generate-component",
+    "generatepipe":"command-to-generate-pipe",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",

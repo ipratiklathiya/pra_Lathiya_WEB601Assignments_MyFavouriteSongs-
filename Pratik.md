@@ -19,3 +19,7 @@ commited all work in github
 
 Generating a component using npm run-script generatecomponent
 
+npm run-script generatepipe to generate a pipe
+
+02:53 PM
+
