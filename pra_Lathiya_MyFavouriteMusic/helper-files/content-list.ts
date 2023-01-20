@@ -2,6 +2,7 @@
 
 class ContentList {
   private readonly contents: Content[];
+  items: any;
 
   constructor() {
     this.contents = [];
@@ -20,6 +21,11 @@ class ContentList {
   }
 
   getHtml(index: number): string {
+    if (index < 0 || index >= this.items.length) {
+      return '<p>Error: index out of range</p>';
+    }
+    const item = this.items[index];
+
     const content = this.contents[index];
     const title = content.title;
     const description = content.description;

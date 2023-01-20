@@ -90,5 +90,10 @@ added app component into app.component.html file so it will display on home page
 
 commit all work in git.
 
+04:51PM
 
+added function for if an index outside of the array's range is entered, return an html
+error message from the function instead.
+
+commit to git
 

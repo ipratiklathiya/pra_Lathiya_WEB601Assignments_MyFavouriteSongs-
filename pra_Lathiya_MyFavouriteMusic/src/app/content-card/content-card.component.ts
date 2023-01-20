@@ -34,5 +34,6 @@ export class ContentCardComponent {
     this._contentList = value;
   }
   private _contentList: any;
+  item: any;
 
 }
