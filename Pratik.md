@@ -84,3 +84,11 @@ ContentList and added  4 valid items(id,title,description and creator) to it usi
 
 function in the Content- card's constructor and commit to git.
 
+04:38PM
+
+added app component into app.component.html file so it will display on home page.
+
+commit all work in git.
+
+
+
