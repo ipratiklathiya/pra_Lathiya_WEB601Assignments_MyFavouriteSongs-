@@ -71,3 +71,10 @@ A function that takes an input of an index of the array and returns a reader-fri
 output of a Content item's properties at that index (title, description, creator, imgURL
 and type).
 
+20-01-2022 3:59 PM
+
+having error to generate component so i change my directory from command cd pra_Lathiya_MyFavouriteMusic
+and generate new component using this command: " ng generate component Content-card".
+and commited to github.
+
+
