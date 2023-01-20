@@ -77,4 +77,10 @@ having error to generate component so i change my directory from command cd pra_
 and generate new component using this command: " ng generate component Content-card".
 and commited to github.
 
+20-01-2023 04:02PM
+In my Content-card's components defintion, created an instance of my
+
+ContentList and added  4 valid items(id,title,description and creator) to it using the ContentList's add
+
+function in the Content- card's constructor and commit to git.
 

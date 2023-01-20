@@ -1,3 +1,5 @@
+// noinspection TypeScriptUnresolvedVariable
+
 class ContentList {
   private readonly contents: Content[];
 

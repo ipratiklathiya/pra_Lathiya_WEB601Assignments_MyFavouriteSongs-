@@ -1,1 +1,7 @@
 <p>content-card works!</p>
+<div *ngFor="let i of [0, 1, 2]">
+  <h2>{{ contentList.getContent(i).title }}</h2>
+  <p>{{ contentList.getContent(i).description }}</p>
+  <p>{{ contentList.getContent(i).creator }}</p>
+</div>
+
