@@ -1,27 +1,99 @@
-# PraLathiyaMyFavouriteMusic
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.2.
+Hi there my name is Pratik Lathiya and im currently developing
+angular web application on My Favourite songs.this is my readme
+file.
 
-## Development server
+19/01/2022 01:15PM
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Added repository into github named Pra_Lathiya_WEB601Assignments_MyFavouriteMusic
+Edited readme.md file to Pratik.md
 
-## Code scaffolding
+19/01/2022 02:04PM
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+created new Angular Application Named pra_Lathiya_MyFavouriteMusic using this
+Command : ng new pra_Lathiya_MyFavouriteMusicApp
 
-## Build
+commited all work in github
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+19/01/2022 02:08 PM
 
-## Running unit tests
+Generating a component using npm run-script generatecomponent
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+npm run-script generatepipe to generate a pipe
 
-## Running end-to-end tests
+02:53 PM
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+npm run-script generatedirective to generate a directive
 
-## Further help
+02:57 PM
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Added folder inside of my app named helper-files
+commit to all work to github and continued to work on my application
+
+03:00PM
+
+added new file into helper-files folder named content-interface.ts
+
+Inside of this new file, i define an interface called Content with the following
+parameters:
+
+id as a number title as a string
+
+description as a string
+
+creator as a string
+
+imgURL as an optional string
+
+type as an optional string
+
+tags as an optional array of strings
+
+commited all work in github and continued work on application
+
+3:15PM
+
+Created another file inside of the helper-files folder called content-list.ts that
+
+contains a class named ContentList, with the following attributes and methods:
+
+A private array of type Content
+
+A constructor that initially sets the array to be empty
+
+A getter function that returns your Content array
+
+An add function that adds 1 Content item to the end of the array
+
+A function that returns the number of items in the array
+
+A function that takes an input of an index of the array and returns a reader-friendly html
+output of a Content item's properties at that index (title, description, creator, imgURL
+and type).
+
+20-01-2022 3:59 PM
+
+having error to generate component so i change my directory from command cd pra_Lathiya_MyFavouriteMusic
+and generate new component using this command: " ng generate component Content-card".
+and commited to github.
+
+20-01-2023 04:02PM
+In my Content-card's components defintion, created an instance of my
+
+ContentList and added  4 valid items(id,title,description and creator) to it using the ContentList's add
+
+function in the Content- card's constructor and commit to git.
+
+04:38PM
+
+added app component into app.component.html file so it will display on home page.
+
+commit all work in git.
+
+04:51PM
+
+added function for if an index outside of the array's range is entered, return an html
+error message from the function instead.
+
+commit to git
+

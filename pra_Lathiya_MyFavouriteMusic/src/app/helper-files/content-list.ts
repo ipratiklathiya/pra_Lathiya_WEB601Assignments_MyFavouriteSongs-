@@ -1,6 +1,7 @@
 // noinspection TypeScriptUnresolvedVariable
 
 class ContentList {
+  // @ts-ignore
   private readonly contents: Content[];
   items: any;
 
@@ -8,10 +9,12 @@ class ContentList {
     this.contents = [];
   }
 
+  // @ts-ignore
   getContents(): Content[] {
     return this.contents;
   }
 
+  // @ts-ignore
   add(content: Content) {
     this.contents.push(content);
   }

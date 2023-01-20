@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { ContentList } from './helper-files/content-list';
-import { Content } from './helper-files/content-interface';
+// @ts-ignore
+import { ContentList } from '../helper-files/content-list';
+// @ts-ignore
+import { Content } from '../helper-files/content-interface';
 
 
 function constructor() {
