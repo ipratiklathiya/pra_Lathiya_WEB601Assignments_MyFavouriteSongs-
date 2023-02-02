@@ -116,4 +116,11 @@ deleted the content-list.ts helper file.
 Created a new component called Content-list using this command:
 "ng generate component content-list"
 
+12:14 PM
+
+In My Content-list component, i defined an array of 6 or more Content items's name
+id,title,description,creator,image,type and tags.
+
+12:21 PM
+
 
