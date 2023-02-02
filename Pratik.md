@@ -126,4 +126,41 @@ id,title,description,creator,image,type and tags.
 Using an ngFor directive in My Content-list's html file, display 5 Content-card's
 by passing in the values from My Content array
 
+02/02/2023
+
+12:31 PM
+
+added Content-card's should be display the Content passed into it as follows:
+
+Each Content-card tag has a 1 pixel border applied to it
+
+The title should be in a header tag
+The image, description, creator, type and tags are visible inside of the box. Styles and
+
+positioning of these elements are your choice, so long as they're in the card. (Hint:
+remember that your tags is an array)
+
+Clicking on the image displays the Content's id and title in the console
+Add any necessary padding, and margins as you see fit
+
+The first content card displayed should have a black solid border of 2 pixels around it.
+
+12:32 PM
+
+n My app-root component, removed my  Content-card from the html and instead added
+
+My Content-list to the html, so that it can be displayed on the home page of My
+
+application. and i  deleted all the extra html in the app-root
+
+that was automatically added by the default angular application.
+
+
+12:38 PM
+
+Finally for the bonus point i added condition which is Do not display, or attempt to display, the type, image or tags on the
+
+Content-card if their value is not set.
+
+and commited to git 
 

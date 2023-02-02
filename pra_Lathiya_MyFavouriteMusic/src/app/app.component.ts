@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ContentListComponent } from './content-list/content-list.component';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +9,3 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'pra_Lathiya_MyFavouriteMusic';
 }
-
