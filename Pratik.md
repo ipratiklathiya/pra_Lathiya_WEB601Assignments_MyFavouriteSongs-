@@ -97,3 +97,23 @@ error message from the function instead.
 
 commit to git
 
+******************
+******************
+ASSIGNMENT-2
+******************
+******************
+
+
+02/02/2023
+
+12:10PM
+
+Deleted the ContentList class implementation from the Content-card code, and
+deleted the content-list.ts helper file.
+
+12:11 PM
+
+Created a new component called Content-list using this command:
+"ng generate component content-list"
+
+
