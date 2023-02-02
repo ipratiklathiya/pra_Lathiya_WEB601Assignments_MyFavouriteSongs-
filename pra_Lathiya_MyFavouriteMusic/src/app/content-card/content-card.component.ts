@@ -1,41 +1,35 @@
 import { Component } from '@angular/core';
-// @ts-ignore
-import { ContentList } from '../helper-files/content-list';
-// @ts-ignore
-import { Content } from '../helper-files/content-interface';
-
-
-function constructor() {
-
-  // @ts-ignore
-  this.contentList = new ContentList();
-  {
-    const contentItems: Content[] = [
-      { id: 1, title: 'Love The Way You Lie', description: 'Favourite Song', creator: 'Rihana' },
-      { id: 2, title: 'Baby', description: 'it has record for most viewers', creator: 'Salman Khan' },
-      { id: 3, title: 'Come Around me', description: 'this song is very popular', creator: 'Alex' }
-    ];
-
-    // @ts-ignore
-    contentItems.forEach(item => this.contentList.add(item));
-
-  }
-}
+import { ContentList } from './helper-files/content-list';
 
 @Component({
   selector: 'app-content-card',
-  templateUrl: './content-card.component.html',
-  styleUrls: ['./content-card.component.css']
+  template: `
+    <div *ngFor="let content of contentList.List; let i = index">
+      <div [innerHTML]="contentList.display(i)"></div>
+    </div>
+  `,
 })
 export class ContentCardComponent {
-  get contentList(): any {
-    return this._contentList;
-  }
+  contentList = new ContentList();
 
-  set contentList(value: any) {
-    this._contentList = value;
+  constructor() {
+    this.contentList.add({
+      id: 1,
+      title: 'First Content',
+      description: 'This is the first content',
+      creator: 'John Doe',
+    });
+    this.contentList.add({
+      id: 2,
+      title: 'Second Content',
+      description: 'This is the second content',
+      creator: 'Jane Doe',
+    });
+    this.contentList.add({
+      id: 3,
+      title: 'Third Content',
+      description: 'This is the third content',
+      creator: 'John Smith',
+    });
   }
-  private _contentList: any;
-  item: any;
-
 }
