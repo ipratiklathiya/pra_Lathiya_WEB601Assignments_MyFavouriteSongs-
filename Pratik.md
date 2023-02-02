@@ -123,4 +123,7 @@ id,title,description,creator,image,type and tags.
 
 12:21 PM
 
+Using an ngFor directive in My Content-list's html file, display 5 Content-card's
+by passing in the values from My Content array
+
 

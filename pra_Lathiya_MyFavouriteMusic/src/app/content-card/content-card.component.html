@@ -1,13 +1,4 @@
 <p>content-card works!</p>
-<div *ngFor="let i of [0, 1, 2]">
-  <div *ngIf="contentList.getContent(i) === 'Error: index out of range'; else content">
-    {{ contentList.getContent(i) }}
-  </div>
-  <ng-template #content>
-    <h2>{{ item.title }}</h2>
-    <p>{{ item.description }}</p>
-    <p>{{ item.creator }}</p>
-  </ng-template>
-</div>
+
 
 <app-content-card></app-content-card>
