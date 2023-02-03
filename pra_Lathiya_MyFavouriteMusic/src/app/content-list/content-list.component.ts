@@ -1,75 +1,69 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+// @ts-ignore
+import {content} from '../helper-files/content-interface';
 
 @Component({
   selector: 'app-content-list',
   templateUrl: './content-list.component.html',
   styleUrls: ['./content-list.component.css']
 })
-export class ContentListComponent implements OnInit {
-  contents = [
+export class ContentListComponent {
+  contents: content[] = [
     {
       id: 1,
-      title: 'Content 1',
-      image: 'https://via.placeholder.com/150x150',
-      description: 'Description 1',
-      creator: 'Creator 1',
-      type: 'Type 1',
-      tags: ['Tag 1', 'Tag 2']
+      title: 'Baby',
+      description: 'its my one of the favourite song',
+      creator: 'Justin Bieber',
+      imgURL: 'https://justin-biber-babysong.com',
+      type: 'rock music',
+      tags: ['Tag 1.1', 'Tag 1.2']
     },
     {
       id: 2,
-      title: 'Content 2',
-      image: 'https://via.placeholder.com/150x150',
-      description: 'Description 2',
-      creator: 'Creator 2',
-      type: 'Type 2',
-      tags: ['Tag 3', 'Tag 4']
+      title: 'Love me like you do',
+      description: 'its highest lisetned song of 2018',
+      creator: 'Rihana',
+      imgURL: 'https://lovemelikeyoudo.com',
+      type: 'pop',
+      tags: ['Tag 2.1', 'Tag 2.2', 'Tag 2.3']
     },
     {
       id: 3,
-      title: 'Third Content',
-      description: 'This is the third content',
-      creator: 'John Smith',
-      type: 'Article',
-      tags: ['Tag3', 'Tag4'],
-      image: 'https://via.placeholder.com/150'
+      title: 'Dirty Dancer',
+      description: 'its awesome song',
+      creator: 'enrique eglesis',
+      imgURL: 'https://dirtydancer.com',
+      type: 'rock music',
+      tags: ['Tag 7', 'Tag 8', 'Tag 9'],
     },
     {
       id: 4,
-      title: 'Fourth Content',
-      description: 'This is the fourth content',
-      creator: 'Jane Smith',
-      type: 'Video',
-      tags: ['Tag4', 'Tag5'],
-      image: 'https://via.placeholder.com/150'
+      title: 'Tere Bina',
+      description: 'Bollywood song',
+      creator: 'Emran Hasmi',
+      imgURL: 'https://terebina.photos/id/4/200/300',
+      type: 'Love song',
+      tags: ['Tag 10', 'Tag 11', 'Tag 12'],
     },
     {
       id: 5,
-      title: 'Fifth Content',
-      description: 'This is the fifth content',
-      creator: 'John Doe',
-      type: 'Article',
-      tags: ['Tag5', 'Tag6'],
-      image: 'https://via.placeholder.com/150'
+      title: 'sanam re',
+      description: 'its most romantic hindi song',
+      creator: 'Jenish Lunagariya',
+      imgURL: 'https://sanamre.photos/id/5/200/300',
+      type: 'sad song',
+      tags: ['Tag 13', 'Tag 14', 'Tag 15'],
     },
     {
       id: 6,
-      title: 'Sixth Content',
-      description: 'This is the sixth content',
-      creator: 'Jane Doe',
-      type: 'Video',
-      tags: ['Tag6', 'Tag7'],
-      image: 'https://via.placeholder.com/150'
+      title: 'Tokyo drift',
+      description: 'its famous song from the fast and furious',
+      creator: 'danja kundra',
+      imgURL: 'https://tokyodrift.photos/id/5/200/300',
+      type: 'rock music',
+      tags: ['Tag 16', 'Tag 17', 'Tag 18'],
     },
   ];
 
-  showIdAndTitle(id: number, title: string) {
-    console.log(`Content id: ${id}, title: ${title}`);
-  }
-
-  constructor() { }
-
-  ngOnInit() {
-  }
 
 }
