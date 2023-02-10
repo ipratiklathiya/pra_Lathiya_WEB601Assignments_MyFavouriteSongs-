@@ -170,3 +170,6 @@ and commited to git
 Assignment 3
 
 changed the version in my package.joson to 0.03
+
+added new more content to my array so my content has 7 items and updated my content item 
+with two different type values and  some with no type set.

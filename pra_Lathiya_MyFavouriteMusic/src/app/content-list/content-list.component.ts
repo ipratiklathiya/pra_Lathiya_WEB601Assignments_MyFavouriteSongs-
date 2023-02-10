@@ -63,7 +63,14 @@ export class ContentListComponent {
       type: 'rock music',
       tags: ['Tag 16', 'Tag 17', 'Tag 18'],
     },
+    {
+      id: 7,
+      title: 'Shape of You',
+      description: 'One of the most popular songs of 2017',
+      creator: 'Ed Sheeran',
+      imgURL: 'https://shapeofyou.photos/id/7/200/300',
+      tags: ['Tag 19', 'Tag 20', 'Tag 21'],
+    },
   ];
-
-
 }
+
