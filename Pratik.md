@@ -164,3 +164,9 @@ Content-card if their value is not set.
 
 and commited to git 
 
+***********
+***********
+
+Assignment 3
+
+changed the version in my package.joson to 0.03
