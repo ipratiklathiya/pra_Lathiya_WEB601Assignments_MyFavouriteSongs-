@@ -173,3 +173,12 @@ changed the version in my package.joson to 0.03
 
 added new more content to my array so my content has 7 items and updated my content item 
 with two different type values and  some with no type set.
+
+Created a pipe named it to contentFilter.pipe.ts and  that accepts a single optional string
+parameter, to filter an array of Content and only returning Content that has its type equal to a
+string passed to the pipe. and added the condition for If no value is passed in, then the pipe returns a filtered array of
+Content that has no type set.
+
+commit to github
+
+

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ContentFilterPipe } from '../app/pipes/contentFilter.pipe';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,7 +12,8 @@ import { ContentListComponent } from './content-list/content-list.component';
   declarations: [
     AppComponent,
     ContentCardComponent,
-    ContentListComponent
+    ContentListComponent,
+    ContentFilterPipe
   ],
   imports: [
     BrowserModule,
