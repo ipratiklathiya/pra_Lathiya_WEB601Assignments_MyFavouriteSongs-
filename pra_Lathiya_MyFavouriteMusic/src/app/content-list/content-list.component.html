@@ -1,5 +1,15 @@
 <p>content-list works!</p>
-<div *ngFor="let content of contentArray | slice:0:5">
-  <app-content-card [content]="content"></app-content-card>
+
+<div>
+  <h2>Content with no type set:</h2>
+  <div *ngFor="let content of contentArray | contentFilter | slice:0:5">
+    <app-content-card [content]="content"></app-content-card>
+  </div>
 </div>
 
+<div *ngFor="let type of types">
+  <h2>Content of type "{{ type }}":</h2>
+  <div *ngFor="let content of contentArray | contentFilter:type | slice:0:5">
+    <app-content-card [content]="content"></app-content-card>
+  </div>
+</div>
