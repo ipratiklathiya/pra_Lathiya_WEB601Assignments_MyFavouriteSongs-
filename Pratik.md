@@ -190,3 +190,16 @@ a clear difference between the colour styling from one card with a certain type 
 another type.
 
 commit to github.
+
+added the ability On my Content-List component and also, added an input field at the very top of the page that users
+may enter the title of a Content item. Next to the input field, added a button that, when clicked,
+it will display a message about whether a Content item exists with that title or not. The
+message should be displayed under this search, with red text when the title doesn't exist, and
+green text when it does exist.
+
+commit to github 
+
+added the if else statement for If a user enters the title of a content item that exists, in addition to the
+message appearing on the page, highlight that content item on my page with a border or
+background colour change on that content card itself.
+

@@ -72,5 +72,21 @@ export class ContentListComponent {
       tags: ['Tag 19', 'Tag 20', 'Tag 21'],
     },
   ];
-}
+  searchTerm: string;
+  result: string;
 
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+  search() {
+    const foundIndex = this.contentArray.findIndex(content => content.title === this.searchTerm);
+    if (foundIndex >= 0) {
+      this.highlightIndex = foundIndex;
+      this.searchResult = 'found';
+    } else {
+      this.searchResult = 'not found';
+    }
+  }
+}
