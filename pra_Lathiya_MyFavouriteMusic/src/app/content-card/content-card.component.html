@@ -1,12 +1,12 @@
-<p>content-card works!</p>
-<div *ngFor="let content of contentArray">
-  <app-content-card [content]="content"></app-content-card>
-</div>
-<div [style.border]="index === 0 ? '2px solid black' : '1px solid gray'" style="display: inline-block; padding: 10px; margin: 10px;">
+<div class="card" [ngClass]="{
+  'green-text': content.type === 'Type 1',
+  'red-text': content.type === 'Type 2',
+
+}">
   <header>
     <h3>{{content.title}}</h3>
   </header>
-  <img (click)="onImageClick()" [src]="content.imgURL">
+  <img (click)="onImageClick()" [src]="content.imgUrl">
   <p>{{content.description}}</p>
   <p><b>Creator:</b> {{content.creator}}</p>
   <p><b>Type:</b> {{content.type}}</p>

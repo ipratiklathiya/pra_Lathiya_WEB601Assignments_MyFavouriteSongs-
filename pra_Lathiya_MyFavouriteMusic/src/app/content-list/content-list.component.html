@@ -6,10 +6,7 @@
     <app-content-card [content]="content"></app-content-card>
   </div>
 </div>
+<div *ngFor="let content of contentArray | ContentFilterPipe: filterType">
+  <app-content-card [content]="content"></app-content-card>
 
-<div *ngFor="let type of types">
-  <h2>Content of type "{{ type }}":</h2>
-  <div *ngFor="let content of contentArray | contentFilter:type | slice:0:5">
-    <app-content-card [content]="content"></app-content-card>
-  </div>
 </div>

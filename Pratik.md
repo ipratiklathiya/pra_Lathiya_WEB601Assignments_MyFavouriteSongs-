@@ -184,3 +184,9 @@ commit to github
 edited the html page of Content-List component so it displays seperate listes by type using my contentFilter pipe
 i added the one loop into the pipe and added 2 seperate *ngFor loops with the type set
 
+added Style for the lists Content-Card's differently by using different font or background colours for
+the card tag itself, based on their type. and because of this There is
+a clear difference between the colour styling from one card with a certain type versus one with
+another type.
+
+commit to github.
