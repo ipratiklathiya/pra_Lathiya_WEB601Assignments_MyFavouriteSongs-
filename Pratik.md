@@ -191,7 +191,7 @@ another type.
 
 commit to github.
 
-added the ability On my Content-List component and also, added an input field at the very top of the page that users
+added the ability On my Content-List component input field at the very top of the page that users
 may enter the title of a Content item. Next to the input field, added a button that, when clicked,
 it will display a message about whether a Content item exists with that title or not. The
 message should be displayed under this search, with red text when the title doesn't exist, and
