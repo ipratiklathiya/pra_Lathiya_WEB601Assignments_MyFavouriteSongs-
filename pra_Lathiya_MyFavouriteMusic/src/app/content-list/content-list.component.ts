@@ -59,7 +59,6 @@ export class ContentListComponent {
       title: 'Tokyo drift',
       description: 'its famous song from the fast and furious',
       creator: 'danja kundra',
-      imgURL: 'https://tokyodrift.photos/id/5/200/300',
       type: 'rock music',
       tags: ['Tag 16', 'Tag 17', 'Tag 18'],
     },

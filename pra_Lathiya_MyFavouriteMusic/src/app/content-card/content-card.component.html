@@ -9,7 +9,7 @@
   <img (click)="onImageClick()" [src]="content.imgUrl">
   <p>{{content.description}}</p>
   <p><b>Creator:</b> {{content.creator}}</p>
-  <p><b>Type:</b> {{content.type}}</p>
+  <h5 class="card-title" hoverAffect>Type: {{content.type}}</h5>
   <p><b>Tags:</b>
     <span *ngFor="let tag of content.tags">{{tag}}</span>
   </p>

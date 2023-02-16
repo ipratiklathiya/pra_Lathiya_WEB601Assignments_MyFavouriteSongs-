@@ -210,3 +210,13 @@ assignment-4
 ****************
 
 changed the version of my package.json file to 0.04
+
+added  directory of image in assets and added image related my theme 
+
+removed one imgurl from  my array In my Content-Card.and added  if the imgURL is not set, displayed an image relevant to my theme (my favourite songs), using either *ngIf. In My
+Content-List component, add or edit some elements to my array of Content.
+
+Created an attribute directive called hover-affect. Apply this attribute directive in my Content-Card, and use it to add an underline to the type when a user
+hovers over the type, and remove the underline when they hover away from the type.
+
+commit to git
