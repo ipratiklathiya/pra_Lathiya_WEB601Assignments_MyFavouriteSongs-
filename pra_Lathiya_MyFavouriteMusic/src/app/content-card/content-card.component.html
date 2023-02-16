@@ -9,8 +9,11 @@
   <img (click)="onImageClick()" [src]="content.imgUrl">
   <p>{{content.description}}</p>
   <p><b>Creator:</b> {{content.creator}}</p>
-  <h5 class="card-title" hoverAffect>Type: {{content.type}}</h5>
+  <h5 class="card-title" Hover-Affect [isFirstCard]="isFirstCard" [isLastCard]="isLastCard">Type: {{content.type}}</h5>
   <p><b>Tags:</b>
-    <span *ngFor="let tag of content.tags">{{tag}}</span>
+    <span *ngFor="let tag of content.tags; let i = index;"
+          Hover-Affect
+          [isFirstCard]="i === 0"
+          [isLastCard]="i === content.tags.length - 1">{{tag}}</span>
   </p>
 </div>

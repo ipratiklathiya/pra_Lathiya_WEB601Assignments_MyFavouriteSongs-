@@ -220,3 +220,13 @@ Created an attribute directive called hover-affect. Apply this attribute directi
 hovers over the type, and remove the underline when they hover away from the type.
 
 commit to git
+
+Using the same directive i added to  bold the individual tags when a user hovers over one, and
+removes the bold when they hover away.
+
+and also added conditions for its operates on each individual tag and not just on all the tags at the same time
+
+In that same attribute directive, applied it to the Content-Card's and
+changed the border of the Content-Card's tag when i hover over it, and set the border
+back to what it originally was (before the hover) when i hover away, if the content
+card is the first or last card in the *ngFor loop.
