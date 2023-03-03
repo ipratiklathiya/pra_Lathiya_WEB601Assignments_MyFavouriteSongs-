@@ -230,3 +230,33 @@ In that same attribute directive, applied it to the Content-Card's and
 changed the border of the Content-Card's tag when i hover over it, and set the border
 back to what it originally was (before the hover) when i hover away, if the content
 card is the first or last card in the *ngFor loop.
+
+**************
+ASSIGNMENT 5
+**************
+Changed the version in my package.json to 0.0.5
+
+Added a component into my  application called CreateContent and add this component to
+the top of my ContentList.
+
+n this new component, added an input field for all the necessary fields to make a piece of
+content, including the ID, followed by a button. also added, When the button is clicked, send the new
+content item up from the CreateContent component to the ContentList using the
+promise pattern. When the new piece of content is successfully sent from the
+CreateContent component using that pattern, the resolved promise should invoke a
+success function that will add a message to the console saying the addition is successful,
+along with the title of the content, and the input fields in the CreateContent's html file
+should be cleared of their current values. and also added , When the ContentList receives the new content
+item, display the new item on the ContentList using my preexisting *ngFor's that still
+have the pipes operating on them.
+
+added condition,If the content fails to be added  the resulting rejected promise should display an error message, in bolded
+red text, under the submit button stating that the content failed to be added. When the content
+is successfully submitted after a failed attempt, the error message should also be cleared.
+
+: Using  this promise seted  to also do error checking for required fields
+(based on the required properties of my Content interface). If a required field is not
+submitted, reject the promise, do not try to emit the content, and display the an error
+message, in red, saying the user must try to create the content again with the required fields
+filled in.
+

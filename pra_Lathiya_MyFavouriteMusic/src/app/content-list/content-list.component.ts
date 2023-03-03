@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 // @ts-ignore
 import {content} from '../helper-files/content-interface';
+import { CreateContentComponent } from '../create-content/create-content.component';
+
 
 @Component({
   selector: 'app-content-list',
@@ -88,4 +90,23 @@ export class ContentListComponent {
       this.searchResult = 'not found';
     }
   }
+  addContent(content: Content) {
+    this.contents.push(content);
+  }
+
+  ngOnInit() {
+    this.addContentPromise = new Promise((resolve, reject) => {
+      this.resolveAddContent = resolve;
+      this.rejectAddContent = reject;
+    });
+
+    this.addContentPromise.then((content: Content) => {
+      this.addContent(content);
+      console.log(`Content with title "${content.title}" successfully added.`);
+      this.errorMsg = '';
+    }).catch((error: string) => {
+      this.errorMsg = error;
+    });
+  }
+
 }
