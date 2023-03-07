@@ -30,9 +30,30 @@ import { MessageService } from '../message.service';
 })
 export class AppComponent implements OnInit {
   topContent: content;
+  inputId: string = '';
+  contentCard: Content;
   messages: any[] = [];
   constructor(private contentService: ContentService, private messageService: MessageService) {}
+  getContentCard() {
+    const id = parseInt(this.inputId);
 
+    // Check if id is a valid number within the array bounds
+    if (isNaN(id) || id < 1 || id > this.contentService.getContentLength()) {
+      this.messageService.sendMessage('Error: Invalid ID entered');
+      return;
+    }
+
+    // Retrieve the content card from the service
+    this.contentService.getContentItem(id).subscribe(
+      contentItem => {
+        this.contentCard = contentItem;
+        this.messageService.sendMessage(`Content Item at id: ${id}`);
+      },
+      error => {
+        console.log(error);
+        this.messageService.sendMessage('Error: Failed to retrieve content item');
+      }
+    );
   ngOnInit() {
     this.messageService.sendMessage('Content array loaded!');
     this.contentService.getContentArray().subscribe(contentArray => {
@@ -42,4 +63,4 @@ export class AppComponent implements OnInit {
       this.topContent = contentArray[0];
     });
   }
-}
+  }

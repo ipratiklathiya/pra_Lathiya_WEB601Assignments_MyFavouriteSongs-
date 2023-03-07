@@ -1,4 +1,8 @@
 <app-messages [messages]="messages"></app-messages>
+<label for="idInput">Enter an ID:</label>
+<input type="text" [(ngModel)]="inputId" name="idInput">
+<button (click)="getContentCard()">Get Content Card</button>
+
 
 <app-content-card *ngIf="favoriteContent$ | async as favoriteContent"
                   [content]="favoriteContent" [shadow]="true"></app-content-card>

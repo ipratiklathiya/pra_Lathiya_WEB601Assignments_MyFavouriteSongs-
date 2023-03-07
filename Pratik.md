@@ -267,5 +267,10 @@ Using my messages service to added a message saying "Content Item at id:
 idNumberHere" in the new service whenever a single content item at a specific id is
 retrieved, where i replaced idNumberHere with the id that was used.
 
+In My AppComponent, added an input where the user can specify an id
+number, and a button that, when clicked, will use the new service to retrieve and display a
+single ContentCard on the page. and  If anything other than a number is entered, or a number
+outside of the array bounds is entered then  display a message using my message service saying an some kind of
+error occured.
 
 
