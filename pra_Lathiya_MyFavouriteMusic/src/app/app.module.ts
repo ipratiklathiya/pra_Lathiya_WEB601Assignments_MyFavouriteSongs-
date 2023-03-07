@@ -6,6 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContentCardComponent } from './content-card/content-card.component';
 import { ContentListComponent } from './content-list/content-list.component';
+import { AppMessagesComponent } from './app-messages/app-messages.component';
+import { MessagesComponent } from './messages/messages.component';
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { ContentListComponent } from './content-list/content-list.component';
     AppComponent,
     ContentCardComponent,
     ContentListComponent,
-    ContentFilterPipe
+    ContentFilterPipe,
+    AppMessagesComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,

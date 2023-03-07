@@ -254,3 +254,18 @@ an id number and  this single content item a box-shadow using css defined
 as part of the ContentCard components style definitions. and set as Only this content card should
 have a box-shadow applied to it.
 
+Added the ability to transmit messages into my  application the way outlined below:
+
+Added my new AppMessages component to the AppComponent component and also added css for that
+
+added new service called message service
+
+Using my  messages service to added a message saying "Content array loaded!" in the
+new service whenever the content array is retrieved
+
+Using my messages service to added a message saying "Content Item at id:
+idNumberHere" in the new service whenever a single content item at a specific id is
+retrieved, where i replaced idNumberHere with the id that was used.
+
+
+

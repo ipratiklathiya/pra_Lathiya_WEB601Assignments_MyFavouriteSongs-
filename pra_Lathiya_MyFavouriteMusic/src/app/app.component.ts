@@ -6,6 +6,8 @@ import {AppModule} from "./app.module";
 import { Observable } from 'rxjs';
 import { content } from '../helper-files/content-interface';
 import { MyFavoriteSongsService } from '../app/my-favorite-songs.service';
+import { MessageService } from '../message.service';
+
 
 @Component({
   selector: 'app-root',
@@ -27,12 +29,17 @@ import { MyFavoriteSongsService } from '../app/my-favorite-songs.service';
   bootstrap: [AppComponent]
 })
 export class AppComponent implements OnInit {
-
-  favoriteContent$: Observable<content>;
-
-  constructor(private myFavoriteSongsService: MyFavoriteSongsService) {}
+  topContent: content;
+  messages: any[] = [];
+  constructor(private contentService: ContentService, private messageService: MessageService) {}
 
   ngOnInit() {
-    this.favoriteContent$ = this.myFavoriteSongsService.getContentById(1);
+    this.messageService.sendMessage('Content array loaded!');
+    this.contentService.getContentArray().subscribe(contentArray => {
+      if (message && message.text) {
+        this.messages.push(message.text);
+      }
+      this.topContent = contentArray[0];
+    });
   }
 }

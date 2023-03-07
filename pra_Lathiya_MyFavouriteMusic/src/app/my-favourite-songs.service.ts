@@ -2,20 +2,23 @@ import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { content } from '../helper-files/content-interface';
 import { CONTENT } from '../helper-files/contentDb';
+import { MessageService } from '../message.service';
 
 @Injectable({
   providedIn: 'root'
 })
-export class MyFavoriteSongsService {
+export class ContentService {
+  constructor(private messageService: MessageService) {}
 
-  constructor() { }
-
-  getContents(): Observable<content[]> {
+  getContentArray(): Observable<content[]> {
+    this.messageService.addMessage('Content array loaded!');
     return of(CONTENT);
   }
 
-  getContentById(id: number): Observable<content> {
-    const contentItem = CONTENT.find(item => item.id === id);
+  getContentItem(id: number): Observable<Content> {
+    const contentItem = this.content.find(item => item.id === id);
+    this.messageService.sendMessage(`Content Item at id: ${id}`);
     return of(contentItem);
   }
+
 }
