@@ -238,3 +238,13 @@ assignment 6
 Using my completed assignment 4 as a base line and start to work on assignment 6
 
 added new file called contentDb.ts in the helper-files folder.deleted my content array from ContentList.
+
+Created a service named myfavouritesongsservices with this:"ng generate service MyFavouriteSongs"
+
+
+Added a function to this service that will retrieve the content array from the contentDb file and return it using the obserable
+pattern and Invoked this services function in my ContentList in order to retrieve my array of
+data and use this to fix my ContentList component so it will  displays the content just as it did
+before.
+
+
