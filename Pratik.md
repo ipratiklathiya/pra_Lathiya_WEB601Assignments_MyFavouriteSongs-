@@ -247,4 +247,10 @@ pattern and Invoked this services function in my ContentList in order to retriev
 data and use this to fix my ContentList component so it will  displays the content just as it did
 before.
 
+Added another method into my  new service that returns an individual item from the content array
+in the contentDb file, given an id number that is provided, also using the observable
+pattern. Using  this , added a single ContentCard item to the top of my AppComponent at
+an id number and  this single content item a box-shadow using css defined
+as part of the ContentCard components style definitions. and set as Only this content card should
+have a box-shadow applied to it.
 

@@ -20,6 +20,9 @@ import { ContentListComponent } from './content-list/content-list.component';
     AppRoutingModule
   ],
   providers: [],
+  exports: [
+    ContentCardComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
