@@ -230,3 +230,11 @@ In that same attribute directive, applied it to the Content-Card's and
 changed the border of the Content-Card's tag when i hover over it, and set the border
 back to what it originally was (before the hover) when i hover away, if the content
 card is the first or last card in the *ngFor loop.
+
+*************
+assignment 6
+*************
+
+Using my completed assignment 4 as a base line and start to work on assignment 6
+
+added new file called contentDb.ts in the helper-files folder.deleted my content array from ContentList.
