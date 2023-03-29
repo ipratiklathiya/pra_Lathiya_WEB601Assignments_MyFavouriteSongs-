@@ -273,3 +273,12 @@ Modified my content interface to accept null id values.
 
 Created a new component called ModifyContentComponent. Added the
 ModifyContentComponent to the top of my ContentList.
+
+In the html of the ModifyContentComponent, added in the necessary inputs for each field of
+my Content, EXCLUDING the id, and added a button below the inputs, with text on the button
+indicating it is for adding content to the list. When a user clicks the button, add a new 'Content'
+item to the simulated server database using the http service inside of my content service
+and clear all the input fields.
+
+alos i Ensure that the id number for the content is automatically being set by the simulated server,
+not manually by the front end code. 

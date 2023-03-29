@@ -16,5 +16,9 @@ export class ContentService {
     return this.http.get<Content[]>(url);
   }
 
-  // Define other CRUD methods here
+  addContent(newContent: Content): Observable<Content> {
+    const url = `${this.serverUrl}/content`;
+    return this.http.post<Content>(url, newContent);
+  }
+
 }
