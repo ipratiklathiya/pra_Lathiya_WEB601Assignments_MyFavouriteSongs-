@@ -1,15 +1,23 @@
 <div>
-  <label for="title">Title:</label>
-  <input type="text" id="title" [(ngModel)]="newContent.title" name="title">
+  <label>Id:</label>
+  <input type="number" [(ngModel)]="content.id" name="id" />
 </div>
 <div>
-  <label for="description">Description:</label>
-  <input type="text" id="description" [(ngModel)]="newContent.description" name="description">
+  <label>Title:</label>
+  <input type="text" [(ngModel)]="content.title" name="title" />
 </div>
 <div>
-  <label for="imageUrl">Image URL:</label>
-  <input type="text" id="imageUrl" [(ngModel)]="newContent.imageUrl" name="imageUrl">
+  <label>Description:</label>
+  <input type="text" [(ngModel)]="content.description" name="description" />
 </div>
 <div>
-  <button (click)="addNewContent()">Add Content</button>
+  <label>Url:</label>
+  <input type="text" [(ngModel)]="content.url" name="url" />
 </div>
+<div>
+  <label>Author:</label>
+  <input type="text" [(ngModel)]="content.author" name="author" />
+</div>
+<button (click)="updateMode ? updateContent() : addContent()">
+  {{ updateMode ? 'Update Content' : 'Add Content' }}
+</button>
