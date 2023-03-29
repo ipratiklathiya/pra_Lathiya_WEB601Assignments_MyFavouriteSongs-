@@ -260,3 +260,8 @@ submitted, reject the promise, do not try to emit the content, and display the a
 message, in red, saying the user must try to create the content again with the required fields
 filled in.
 
+*************
+Assignment 7
+************
+
+change the version of my package.json file to 0.07
