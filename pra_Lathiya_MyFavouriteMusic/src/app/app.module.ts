@@ -11,19 +11,22 @@ import { ModifyContentComponent } from './modify-content/modify-content.componen
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ContentCardComponent,
-    ContentListComponent,
-    ContentFilterPipe,
-    CreateContentComponent,
-    ModifyContentComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        ContentCardComponent,
+        ContentListComponent,
+        ContentFilterPipe,
+        CreateContentComponent,
+        ModifyContentComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule
+    ],
+    providers: [],
+    exports: [
+        ContentFilterPipe
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

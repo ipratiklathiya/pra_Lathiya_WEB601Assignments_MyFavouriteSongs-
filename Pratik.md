@@ -282,3 +282,10 @@ and clear all the input fields.
 
 alos i Ensure that the id number for the content is automatically being set by the simulated server,
 not manually by the front end code. 
+
+Using the message service  for display a message after content is
+successfully added to the ContentList.also, Make sure that the new item is displayed on the
+page, even with the pipes applied.
+
+
+

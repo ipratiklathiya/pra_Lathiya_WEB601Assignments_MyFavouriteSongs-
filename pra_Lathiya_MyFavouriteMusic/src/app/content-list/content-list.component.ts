@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import {content} from '../helper-files/content-interface';
 import { CreateContentComponent } from '../create-content/create-content.component';
 import { ContentService } from '../content-service.service';
-
+import { MessageService } from '../message.service';
 
 @Component({
   selector: 'app-content-list',
@@ -76,8 +76,11 @@ export class ContentListComponent {
   ];
   searchTerm: string;
   result: string;
+  contentArray: string;
+  filterType: ;
 
-  constructor(private contentService: ContentService) { }
+  constructor(private contentService: ContentService, private messageService: MessageService) { }
+
 
 
   ngOnInit(): void {
@@ -85,7 +88,27 @@ export class ContentListComponent {
       this.contentList = content;
     });
   }
+  getContents(): void {
+    this.contentService.getAllContent()
+      .subscribe(contents => this.contents = contents);
+  }
 
+  clearContents(): void {
+    this.contentService.clearAllContent()
+      .subscribe(() => {
+        this.messageService.add('Content list cleared');
+        this.contents = [];
+      });
+  }
+
+  deleteContent(content: Content): void {
+    this.contentService.deleteContent(content)
+      .subscribe(() => {
+        this.messageService.add(`Content with id=${content.id} deleted`);
+        this.contents = this.contents.filter(c => c !== content);
+      });
+  }
+}
 
   search() {
     const foundIndex = this.contentArray.findIndex(content => content.title === this.searchTerm);

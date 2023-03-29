@@ -2,6 +2,7 @@ import {Component, NgModule} from '@angular/core';
 import { ContentListComponent } from './content-list/content-list.component';
 import { HoverAffectDirective } from './content-card/hover-affect.directive';
 import {BrowserModule} from "@angular/platform-browser";
+import {AppModule} from "./app.module";
 
 @Component({
   selector: 'app-root',
@@ -16,7 +17,8 @@ import {BrowserModule} from "@angular/platform-browser";
     HoverAffectDirective
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppModule
   ],
   providers: [],
   bootstrap: [AppComponent]
