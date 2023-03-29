@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { ContentCardComponent } from './content-card/content-card.component';
 import { ContentListComponent } from './content-list/content-list.component';
 import { CreateContentComponent } from './create-content/create-content.component';
+import { ModifyContentComponent } from './modify-content/modify-content.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { CreateContentComponent } from './create-content/create-content.componen
     ContentCardComponent,
     ContentListComponent,
     ContentFilterPipe,
-    CreateContentComponent
+    CreateContentComponent,
+    ModifyContentComponent
   ],
   imports: [
     BrowserModule,

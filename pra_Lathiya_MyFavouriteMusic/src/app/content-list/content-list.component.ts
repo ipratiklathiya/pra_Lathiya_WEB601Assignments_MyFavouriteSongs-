@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 // @ts-ignore
 import {content} from '../helper-files/content-interface';
 import { CreateContentComponent } from '../create-content/create-content.component';
+import { ContentService } from '../content-service.service';
 
 
 @Component({
@@ -76,10 +77,15 @@ export class ContentListComponent {
   searchTerm: string;
   result: string;
 
-  constructor() { }
+  constructor(private contentService: ContentService) { }
 
-  ngOnInit() {
+
+  ngOnInit(): void {
+    this.contentService.getAllContent().subscribe((content: Content[]) => {
+      this.contentList = content;
+    });
   }
+
 
   search() {
     const foundIndex = this.contentArray.findIndex(content => content.title === this.searchTerm);

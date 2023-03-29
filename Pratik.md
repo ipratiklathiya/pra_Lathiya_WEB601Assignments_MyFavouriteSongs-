@@ -265,3 +265,11 @@ Assignment 7
 ************
 
 change the version of my package.json file to 0.07
+
+Converted my application to use the simulated server discussed in class instead of the
+contentDb.ts file system for storing and retrieving the content.
+
+Modified my content interface to accept null id values.
+
+Created a new component called ModifyContentComponent. Added the
+ModifyContentComponent to the top of my ContentList.
