@@ -288,4 +288,15 @@ successfully added to the ContentList.also, Make sure that the new item is displ
 page, even with the pipes applied.
 
 
+************
+************
+************
+Assignment-8
+************
+************
+************
+
+Changed the version of package.json to 0.0.8
+
+
 
