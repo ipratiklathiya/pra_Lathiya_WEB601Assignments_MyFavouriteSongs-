@@ -12,12 +12,12 @@
 </div>
 <div>
   <label>Url:</label>
-  <input type="text" [(ngModel)]="content.url" name="url" />
+  <input mat-input type="text" [(ngModel)]="content.url" name="url" />
 </div>
 <div>
   <label>Author:</label>
-  <input type="text" [(ngModel)]="content.author" name="author" />
+  <input mat-input type="text" [(ngModel)]="content.author" name="author" />
 </div>
-<button (click)="updateMode ? updateContent() : addContent()">
+<button  mat-button (click)="updateMode ? updateContent() : addContent()">
   {{ updateMode ? 'Update Content' : 'Add Content' }}
 </button>

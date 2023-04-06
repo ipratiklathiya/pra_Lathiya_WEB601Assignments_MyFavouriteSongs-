@@ -1,42 +1,16 @@
-
-<app-modify-content (contentAdded)="updateContentList($event)"></app-modify-content>
-
-
-<div class="content-card">
-  <img *ngIf="content.imgURL; else defaultImage" [src]="content.imgURL" alt="Content Image">
-  <ng-template #defaultImage>
-    <img src="assets/image/img.png" alt="Default Image">
-  </ng-template>
-  <h2>{{ content.title }}</h2>
-  <p>{{ content.description }}</p>
-</div>
-<div>
-<input [(ngModel)]="searchTerm" placeholder="Enter content title">
-<button (click)="search()">Search</button>
-<p *ngIf="searchResult === 'found'" style="color: green;">Content found</p>
-<p *ngIf="searchResult === 'not found'" style="color: red;">Content not found</p>
-</div>
-<div>
-  <h2>Content with no type set:</h2>
-  <!--suppress TypeScriptUnresolvedFunction -->
-  <div *ngFor="let content of contentArray | contentFilter | slice:0:5">
-    <app-content-card [content]="content"></app-content-card>
-  </div>
-</div>
-<div *ngFor="let content of contentArray | ContentFilterPipe: filterType">
-  <app-content-card [content]="content"></app-content-card>
-
-</div>
-<h2>Content List</h2>
-<button (click)="clearContents()">Clear Content List</button>
-<ul>
-  <li *ngFor="let content of contents | filter:filterText | orderBy:sortField:sortOrder">
-    <app-content [content]="content" (delete)="deleteContent($event)"></app-content>
-  </li>
-</ul>
-<app-filter-sort (filterTextChange)="filterText=$event" (sortFieldChange)="sortField=$event.field; sortOrder=$event.order"></app-filter-sort>
-<div *ngIf="messageService.messages.length > 0">
-  <h3>Messages:</h3>
-  <div *ngFor="let message of messageService.messages">{{message}}</div>
-</div>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{ content.title }}</mat-card-title>
+    <mat-card-subtitle>{{ content.subtitle }}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image [src]="content.imageUrl" [alt]="content.title">
+  <mat-card-content>
+    <p>{{ content.description }}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="edit()">Edit</button>
+    <button mat-button color="warn" (click)="delete()">Delete</button>
+    <ng-content></ng-content>
+  </mat-card-actions>
+</mat-card>
 

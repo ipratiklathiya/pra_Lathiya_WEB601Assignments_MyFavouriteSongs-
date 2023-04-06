@@ -298,7 +298,46 @@ Assignment-8
 
 Changed the version of package.json to 0.0.8
 
+Added a custom angular material theme into  assignment using a colour of blue and grey.
 
+Changed all of the inputs and buttons across my angular application to use their material
+counterparts.
+Added a new button called "Add New Content" to my ModifyContentComponent from the
+previous assignment. Clicking it should open an angular material dialog. The dialog should
+contain the following in it:
+
+Seted the dialog title to "Add contentType" where contentType is the theme of my
+content 
+
+Moved my inputs for creating a new content item into the dialog content
+
+Added an input field for the id field of content as well, and set it to be disabled
+The dialog actions should have two buttons which is below:
+
+One button to cancel the dialog, which will close the dialog when clicked
+
+One button to add the content, that when clicked, will close the dialog and send
+the data from the input boxes up to the ModifyContentComponent.
+
+The ModifyContentComponent should add the content to the simulated
+server just as it did for assignment 6 after the dialog closes.
+If the user opens the dialog again using the "Add New Content" button, all the input fields
+should be empty.
+Changed my ContentCard component to use the material card component to display and
+organize the information in the ContentCard component.
+
+Added  two additional material components that we have not used in class.
+ 
+Added the ModifyContentComponent to my ContentCard
+component such that the "Add New Content" button instead says "Update Content". When the
+user clicks on the button, the dialog should appear, with all the input fields populated with the
+content information for that ContentCard. The second button in the dialog itself should now
+say "Update Content" (where it was previously for adding content), and when that is clicked, it
+will close the dialog and send the updated version of the information from the input boxes up
+to the ModifyContentComponent, which will update the existing Content on the
+simulated server using the appropriate http method in my content Service. Once the content
+is updated successfully on the simulated server, use the message service to displayed a
+message that the content was successfully updated, along with the title of the content.
 
 
 
