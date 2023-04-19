@@ -12,6 +12,17 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { ModifyContentComponentComponent } from './modify-content-component/modify-content-component.component';
 import { AddContentDialogComponent } from './add-content-dialog/add-content-dialog.component';
+import { ContentDetailComponent } from './content-detail/content-detail.component';
+import { RouterModule, Routes } from '@angular/router';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+
+const routes: Routes = [
+  { path: '', redirectTo: '/list', pathMatch: 'full' },
+  { path: 'list', component: ContentListComponent },
+  { path: 'detail/:id', component: ContentDetailComponent },
+  { path: '**', component: PageNotFoundComponent }
+];
+
 
 @NgModule({
     declarations: [
@@ -22,17 +33,21 @@ import { AddContentDialogComponent } from './add-content-dialog/add-content-dial
         CreateContentComponent,
         ModifyContentComponent,
         ModifyContentComponentComponent,
-        AddContentDialogComponent
+        AddContentDialogComponent,
+        ContentDetailComponent,
+        PageNotFoundComponent
     ],
     imports: [
         BrowserModule,
         AppRoutingModule,
       MatButtonModule,
       MatInputModule,
+      RouterModule.forRoot(routes)
     ],
     providers: [],
     exports: [
-        ContentFilterPipe
+        ContentFilterPipe,
+      RouterModule
     ],
     bootstrap: [AppComponent]
 })

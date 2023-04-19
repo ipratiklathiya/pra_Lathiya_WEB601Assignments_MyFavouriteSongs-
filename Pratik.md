@@ -345,6 +345,33 @@ Assignment-9
 **************
 **************
 
+Changed the version in package.json to 0.0.9.
+
+Created a new component called ContentDetailComponent that displays a more detailed view of specific content item 
+based on the content's id in the URL.
+
+Added routing to the application such that users can visit the content list and individual content detail pages without
+the page having to reload going back and forth between the two.
+
+Removed the single content card from the AppComponent and removed the content description from the content card.
+
+The AppMessage component is still displayed on the AppComponent.
+
+Users can view the list if they visit the root URL of the application or if they go to '/list'.
+
+Added the link to the content detail page in the content card.
+
+The content detail page retrieves the content from the simulated server using the content service and displays the 
+individual piece of content in a different way than the content card. When the content comes back from the simulated 
+server, the ContentDetailComponent adds a message using the MessageService to display the id and title of the content
+that was retrieved. Added a link to the ContentDetailComponent that leads back to the content list.
+
+Added a route in the application that handles any invalid URLs and displays some kind of 'Page not found' message 
+to the user, with a link or button to the content list on the page as well.
+
+All links in the application use the routing rules and do not reload the page when clicked.
+
+Implemented lazy loading for the ContentDetailComponent. The console indicates the component's chunk is loaded after a content detail link is visited.
 
 
 

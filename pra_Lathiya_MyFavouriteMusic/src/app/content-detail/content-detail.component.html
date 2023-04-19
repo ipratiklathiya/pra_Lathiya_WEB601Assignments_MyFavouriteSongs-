@@ -1,0 +1,9 @@
+<div *ngIf="content">
+  <h2>{{ content.title }}</h2>
+  <p>{{ content.body }}</p>
+</div>
+<div *ngIf="!content">Loading...</div>
+
+<p *ngIf="message">{{ message }}</p>
+
+<button (click)="goBack()">Back to List</button>
