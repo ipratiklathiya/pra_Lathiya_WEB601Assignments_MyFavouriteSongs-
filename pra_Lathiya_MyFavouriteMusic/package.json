@@ -1,6 +1,6 @@
 {
   "name": "pra-lathiya-my-favourite-music",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "scripts": {
     "generatecomponent": "command-to-generate-component",
     "generatepipe":"command-to-generate-pipe",
