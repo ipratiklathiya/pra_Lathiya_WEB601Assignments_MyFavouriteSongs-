@@ -373,5 +373,35 @@ All links in the application use the routing rules and do not reload the page wh
 
 Implemented lazy loading for the ContentDetailComponent. The console indicates the component's chunk is loaded after a content detail link is visited.
 
+*************
+*************
+*************
+Assignment-10
+*************
+*************
+*************
+
+Changed the version in my package.json to 0.1.0.
+
+Transform my single page application to a Progressive Web App. Installed service worker and
+the http-server to my angular project.
+
+Changed the build settings such that the project will output to a folder named
+/dist/LathiyaPratikSongs.
+
+Changed the npm start command to run the http-server command necessary to view my
+PWA.
+
+Created and utilize a service to your PWA that checks if an update is available and is ready to
+be applied. 
+
+Used the service to display a snackbar when an update is ready to be applied,
+with an action button on the snackbar. When the user clicks the action button, activate the
+update and reload the page.
+
+Added a long poll to my application such that it will automatically check for
+updates made to the code every half hour.
+
+
 
 

@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ContentFilterPipe } from '../app/pipes/contentFilter.pipe';
-
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContentCardComponent } from './content-card/content-card.component';
@@ -42,7 +43,9 @@ const routes: Routes = [
         AppRoutingModule,
       MatButtonModule,
       MatInputModule,
-      RouterModule.forRoot(routes)
+      RouterModule.forRoot(routes),
+      ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+
     ],
     providers: [],
     exports: [
